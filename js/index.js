@@ -3,8 +3,19 @@ function search() {
     console.log('hello!');
     const searchValue = document.getElementById('search_field').value;
 
+    let gogo_url = "https://gogoprivate.com/search?#gsc.q=" + searchValue;
     let gogo_search = document.getElementById("GoGo");
-    let srcstring = "https://gogoprivate.com/search?#gsc.q=" + searchValue;
-    gogo_search.setAttribute("src", srcstring);
+    gogo_search.setAttribute("src", gogo_url);
 
+    let gibiru_url = "https://gibiru.com/results.html?q=" + searchValue;
+    let gibiru_search = document.getElementById("Gibiru");
+    gibiru_search.setAttribute("src", gibiru_url);
+
+    let google_url = "https://www.google.com/search?q=" + searchValue + "&igu=1";
+    let google_search = document.getElementById("Google");
+    google_search.setAttribute("src", google_url);
+
+    let bing_url = "https://www.bing.com/search?q=" + searchValue;
+    let bing_search = document.getElementById("Bing");
+    bing_search.setAttribute("src", bing_url);
 }
