@@ -1,15 +1,10 @@
 
 function search() {
-    console.log('hello!');
     const searchValue = document.getElementById('search_field').value;
 
     let gogo_url = "https://gogoprivate.com/search?#gsc.q=" + searchValue;
     let gogo_search = document.getElementById("GoGo");
     gogo_search.setAttribute("src", gogo_url);
-
-    let gibiru_url = "https://gibiru.com/results.html?q=" + searchValue;
-    let gibiru_search = document.getElementById("Gibiru");
-    gibiru_search.setAttribute("src", gibiru_url);
 
     let google_url = "https://www.google.com/search?q=" + searchValue + "&igu=1";
     let google_search = document.getElementById("Google");
